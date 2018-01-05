@@ -1,0 +1,10 @@
+{% if all_developers %}
+    <ul>
+        {% for developer  in all_developers %}
+        <li><a href="/games/genres/games/developers/{{ developer.id_developer}}">{{ developer.developer_name }}</a></li>
+        {% endfor %}
+
+    </ul>
+{% else %}
+    <h3>No developers to show.</h3>
+{% endif %}

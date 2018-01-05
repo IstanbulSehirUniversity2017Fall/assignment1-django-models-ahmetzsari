@@ -1,0 +1,11 @@
+
+<h1>Here are the games : </h1>
+<ul>
+
+    {% for game in all_games %}
+
+                <li><a href="/games/genres/games/{{ game.id_game }}/">{{ game.game_name }}</a>
+                <p>{{ all_things}} </p>
+
+    {% endfor %}
+</ul>

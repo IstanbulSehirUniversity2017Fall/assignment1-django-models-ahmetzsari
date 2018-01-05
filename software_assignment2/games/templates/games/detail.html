@@ -1,0 +1,9 @@
+
+<h1>{{ genres.genre_type }}</h1>
+
+<ul>
+    {% for game in genres.game_set.all %}
+        <li>{{ game.game_name }}</li>
+    {% endfor %}
+
+</ul>

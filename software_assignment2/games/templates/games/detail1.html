@@ -1,0 +1,11 @@
+
+
+
+<h1>{{ games.game_name }}</h1>
+
+<ul>
+    {% for developer in games.developer_set.all %}
+        <li>{{ developer.developer_name }}</li>
+    {% endfor %}
+
+</ul>
